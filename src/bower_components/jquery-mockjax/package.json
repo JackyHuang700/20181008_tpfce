@@ -1,0 +1,100 @@
+{
+  "_from": "jquery-mockjax@^2.5.0",
+  "_id": "jquery-mockjax@2.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-mmQ/A0ktyJnrJVAoJEYzJk1selYOKrRTmvfrx7p1V/l8eF56Pw1CnIero4sKrKEXADg1/wWvA53DU5H5P0bnYg==",
+  "_location": "/jquery-mockjax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "jquery-mockjax@^2.5.0",
+    "name": "jquery-mockjax",
+    "escapedName": "jquery-mockjax",
+    "rawSpec": "^2.5.0",
+    "saveSpec": null,
+    "fetchSpec": "^2.5.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-mockjax/-/jquery-mockjax-2.5.0.tgz",
+  "_shasum": "d9c553d26e8ee849884b8d290be0776e21cd9801",
+  "_spec": "jquery-mockjax@^2.5.0",
+  "_where": "C:\\Users\\JackyHuang\\Documents\\GitHub\\20180903_PMOLayout2_VueWebpack",
+  "author": {
+    "name": "Jonathan Sharp",
+    "url": "http://jdsharp.com"
+  },
+  "bugs": {
+    "url": "http://github.com/jakerella/jquery-mockjax/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Doug Neiner"
+    },
+    {
+      "name": "Jonathan Creamer"
+    },
+    {
+      "name": "Jordan Kasper"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.5.2"
+  },
+  "deprecated": false,
+  "description": "The jQuery Mockjax Plugin provides a simple and extremely flexible interface for mocking or simulating ajax requests and responses.",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "browserstack-runner": "^0.7.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "http-server": "^0.11.1",
+    "jsdom": "~4.2.0",
+    "load-grunt-tasks": "^0.6.0",
+    "mocha": "^2.2.4",
+    "puppeteer": "^1.1.1",
+    "sinon": "^1.17.4",
+    "xmlhttprequest": "^1.7.0"
+  },
+  "homepage": "https://github.com/jakerella/jquery-mockjax",
+  "keywords": [
+    "ajax",
+    "mock",
+    "unit",
+    "testing",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    },
+    {
+      "type": "GPLv2",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    }
+  ],
+  "main": "./src/jquery.mockjax.js",
+  "name": "jquery-mockjax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakerella/jquery-mockjax.git"
+  },
+  "scripts": {
+    "test": "grunt test:all && node browserstack.js"
+  },
+  "title": "jQuery Mockjax",
+  "url": "https://github.com/jakerella/jquery-mockjax",
+  "version": "2.5.0"
+}
