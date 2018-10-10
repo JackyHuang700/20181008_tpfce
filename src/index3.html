@@ -40,6 +40,8 @@
     }(document, 'script', 'facebook-jssdk'));</script> -->
   <div id="wrapper" class="aboutPage">
     <header class="header">
+      <!-- 上方區塊 -->
+      <!-- 下方區塊 -->
       <div class="headMenu">
         <div class="headBox">
           <h1 class="logo">
@@ -47,6 +49,7 @@
               <img src="img/logo2.png">
             </a>
           </h1>
+          <!-- tel -->
           <div class="top_menu">
             <div class="icon">
               <i class="i1"></i>
@@ -128,6 +131,7 @@
                   <span class="tw">聯絡我們</span>
                 </a>
               </li>
+              <!-- <li class="language_icon"><a href="javascript:translatePage();" id="translateLink1">简</a></li> -->
               <li class="closeBtn"><a href="javascript:;">&times;</a></li>
             </ul>
           </div>
@@ -145,67 +149,80 @@
       </script>
     </header>
     <main class="main">
+      <!-- 圖片尺寸2000x350 -->
+      <!-- 內容 -->
       <section class="mainBox">
         <div class="mainContainer">
+          <!-- 左邊 -->
           <div class="leftNav">
             <div class="mti">
-              <h2>關於基金會</h2>
-              <h3>ABOUT</h3>
+              <h2>捐款支持</h2>
+              <h3>support</h3>
             </div>
             <div class="leftMenu">
               <ul class="thm">
-                <li class="hit"><a href="about.php?id=6">成立宗旨</a></li>
-                <li class=""><a href="about.php?id=8">捐助章程</a></li>
-                <li class=""><a href="about.php?id=4">會長的話</a></li>
-                <li class=""><a href="about.php?id=7">會所資訊</a></li>
+                <li><a href="support_directory.php">捐款芳名錄</a></li>
+                <li><a href="support_donation.php">我要捐款</a></li>
+                <li class="hit"><a href="support_qa.php">捐款QA</a></li>
               </ul>
             </div>
           </div>
+          <!-- 右邊 -->
           <div class="right-main">
-            <div class="path"><a href="index.php">首頁</a><span>/ </span><a href="about.php">關於基金會</a><span>/ </span>成立宗旨</div>
+            <div class="path"><a href="index.php">首頁</a><span>/ </span>捐款支持<span>/ </span>捐款QA</div>
             <div class="mainBox">
               <div class="mainTitle">
-                <h2>成立宗旨</h2>
+                <h2>捐款QA</h2>
               </div>
-              <div class="fb-like" data-href="http://www.tmuaf.org.tw/about.php" data-layout="button_count" data-action="like"
-                data-size="small" data-show-faces="true" data-share="true"></div>
-              <div class="innerContent">
-                <p style="text-align: justify;"><span style="color:#000000"><span style="font-family:微軟正黑體,sans-serif"><span
-                        style="font-size:18px">1. 本基金會依照民法暨教育部審查教育事務財團法人設立許可及監督要點組織之，定名為「財團法人臺北醫學大學校友會教育基金會」（以下簡稱本會）。</span></span></span></p>
+              <!-- fb分享-->
+              <div class="fb-like" data-href="http://www.tmuaf.org.tw/support_qa.php" data-layout="button_count"
+                data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+              <section class="postcontent">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                </ul>
 
-                <p style="text-align: justify;"><span style="color:#000000"><span style="font-family:微軟正黑體,sans-serif"><span
-                        style="font-size:18px">2. 本會以推展教育事業、促進國家與社會發展及全民福祉為宗旨，依有關法令規定辦理下列業務：</span></span><br>
-                    <span style="font-family:微軟正黑體,sans-serif"><span style="font-size:18px">一、積極鼓勵臺北醫學大學熱心公益校友、社會賢達及善心人士等共同推展教育事業及活動。<br>
-                        二、推動教育文化事業，並以教學、研究、及醫療、照護、衛生等教育及活動，以提升全民生活&nbsp; &nbsp;水準，並促進全民健康、社會福祉。<br>
-                        三、設置獎學金以提供優秀及清寒學生，以為國家培育傑出人才。<br>
-                        四、設置或興建研究機構、研究中心及捐助學術單位經費與設施，成為研究之根基。<br>
-                        五、加強推展國際交流及合作，共同推展教育事業及從事開發創新研究以提升人類文明。<br>
-                        六、鼓勵及協助母校在校學生、校友、教職員及學校等之辦理推廣教育事業。<br>
-                        七、其他符合本會設立宗旨之相關公益性教育事務。</span></span></span></p>
-              </div>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="home">aaa</div>
+                  <div role="tabpanel" class="tab-pane" id="profile">bbb</div>
+                  <div role="tabpanel" class="tab-pane" id="messages">ccc</div>
+                  <div role="tabpanel" class="tab-pane" id="settings">ddd</div>
+                </div>
+              </section>
+
             </div>
-            <div class="online" style="top: 304px;">
-              <a href="support_donation.php" class="donationbtn">我要捐款</a>
-              <a href="scholarships.php" class="applicationbtn">申請獎學金</a>
-              <a href="contact.php" class="contactbtn">聯絡我們</a>
-              <a href="javascript:;" class="top">回到頂部</a>
-            </div>
+          </div>
+          <!-- 右邊按鈕 -->
+          <div class="online" style="top: 922px;">
+            <!-- 固定icon -->
+            <a href="support_donation.php" class="donationbtn">我要捐款</a>
+            <a href="scholarships.php" class="applicationbtn">申請獎學金</a>
+            <a href="contact.php" class="contactbtn">聯絡我們</a>
+            <a href="javascript:;" class="top">回到頂部</a>
           </div>
         </div>
       </section>
 
     </main>
+    <!-- footer -->
+    <!-- 下方Banner 建議尺寸 223x125-->
     <div class="bottomBanner">
-      <ul>
-        <li><a href="http://www.tmuaf.org.tw/support_donation.php" target="_blank"><img src="http://fakeimg.pl/223x125/"
-              title="" alt=""></a></li>
-        <li><a href="http://www.tmuaf.org.tw/support_qa.php" target="_blank"><img src="http://fakeimg.pl/223x125/"
-              title="" alt=""></a></li>
-        <li><a href="http://www.tmuaf.org.tw/scholarships_detail.php?id=3" target="_blank"><img src="http://fakeimg.pl/223x125/"
-              title="" alt=""></a></li>
-        <li><a href="" target="_blank"><img src="http://fakeimg.pl/223x125/" title="" alt=""></a></li>
-        <li><a href="http://www.tmu.edu.tw/main.php" target="_blank"><img src="http://fakeimg.pl/223x125/" title="" alt=""></a></li>
-      </ul>
+        <ul>
+            <li><a href="http://www.tmuaf.org.tw/support_donation.php" target="_blank"><img src="http://fakeimg.pl/223x125/"
+                  title="" alt=""></a></li>
+            <li><a href="http://www.tmuaf.org.tw/support_qa.php" target="_blank"><img src="http://fakeimg.pl/223x125/"
+                  title="" alt=""></a></li>
+            <li><a href="http://www.tmuaf.org.tw/scholarships_detail.php?id=3" target="_blank"><img src="http://fakeimg.pl/223x125/"
+                  title="" alt=""></a></li>
+            <li><a href="" target="_blank"><img src="http://fakeimg.pl/223x125/" title="" alt=""></a></li>
+            <li><a href="http://www.tmu.edu.tw/main.php" target="_blank"><img src="http://fakeimg.pl/223x125/" title=""
+                  alt=""></a></li>
+          </ul>
       <div class="out_link">
         <a href="http://hypertension.org.tw" target="_blank">中華民國防高血壓協會</a>
         <a href="http://lecture99.com/" target="_blank">健康公益講座</a>
@@ -258,7 +275,9 @@
 
 
 
-
+    $('.nav-tabs > li > a').click(function () {
+      $(this).tab('show');
+    });
 
 
 

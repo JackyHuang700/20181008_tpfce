@@ -1,0 +1,155 @@
+.header,
+.headMenu,
+.mainTitle::before,
+.thm .hit a {
+  background-color: #eb752a;
+}
+
+.path a:hover,
+.mti h3,
+.thm li a:hover,
+.out_link a {
+  color: #eb752a;
+}
+
+.top_menu > ul > li > a::after {
+  color: #fff;
+}
+
+.subheader .tw::after {
+  background-color: #fff;
+}
+
+.out_link a:hover {
+  opacity: 0.6;
+}
+
+.right-main {
+  border-left-color: #eb752a;
+}
+
+.top_menu .submenu {
+  background-color: #db5330;
+}
+
+.top_menu .submenu li:hover {
+  background-color: #b84628;
+}
+
+.top_menu .icon {
+  background-color: transparent;
+}
+
+.top_menu .submenu li:hover {
+  background-color: #eb752a;
+}
+
+.top_menu > ul > li {
+  border-bottom-color: #f9a48e;
+}
+
+.copyhight {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  top: 15px;
+}
+
+.subheader .tw::after {
+  left: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+footer {
+  background: url(../img/footerBg.jpg) top left;
+}
+
+.thm .hit a {
+  border-radius: 5px;
+}
+
+.postcontent .nav-tabs > li.active > a {
+  color: #eb752a;
+  font-weight: 500;
+}
+
+.postcontent .nav-tabs > li > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: border-color, background-color;
+}
+
+.postcontent .nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+  background-color: #eeeeee;
+}
+
+.bottomBanner img {
+  border-radius: 5px;
+}
+
+.bottomBanner li {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1190px) {
+  .logo {
+    top: 22px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .top_menu > ul {
+    top: 91px;
+  }
+  .top_menu .submenu li a {
+    padding: 10px 20px 10px 10px;
+  }
+  .top_menu > ul > li.closeBtn {
+    margin-bottom: 20px;
+  }
+  .add,
+  .sitmap {
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    width: 72%;
+    padding-left: 0px;
+  }
+  .logo {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .top_menu > ul > li > a {
+    padding: 11px 15px 8px 15px;
+    transition: padding 0.3s ease-in-out;
+  }
+  .top_menu > ul > li > a:hover {
+    padding-bottom: 8px;
+  }
+  .top_menu > ul > li.closeBtn a {
+    background-color: #eb752a;
+    color: #efefef;
+    padding: 5px 10px;
+    width: 43%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .top_menu > ul > li.closeBtn a:hover {
+    opacity: 0.7;
+  }
+  .top_menu > ul > li.closeBtn a::before {
+    content: none;
+  }
+}
+
+/*# sourceMappingURL=custom2.css.map */
