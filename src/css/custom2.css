@@ -130,18 +130,6 @@ footer {
   color: black;
 }
 
-.top_menu > ul > li > a::before {
-  transition: all 250ms;
-}
-
-.top_menu > ul > li > a.on::before,
-.top_menu > ul > li > a::before,
-.top_menu > ul > li > a:hover::before {
-  background: none;
-  content: '\f105';
-  font-family: FontAwesome;
-}
-
 @media only screen and (max-width: 1190px) {
   .logo {
     top: 22px;
@@ -175,6 +163,16 @@ footer {
   .logo {
     top: 0px;
   }
+  .top_menu > ul > li > a::before {
+    transition: all 250ms;
+  }
+  .top_menu > ul > li > a.on::before,
+  .top_menu > ul > li > a::before,
+  .top_menu > ul > li > a:hover::before {
+    background: none;
+    content: '\f105';
+    font-family: FontAwesome;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -199,5 +197,4 @@ footer {
     content: none;
   }
 }
-
 /*# sourceMappingURL=custom2.css.map */
