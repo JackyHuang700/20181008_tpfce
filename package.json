@@ -52,16 +52,13 @@
     "css-prefix": "postcss --config build/postcss.config.js --replace \"src/css/*.css\" \"!src/css/*.min.css\"",
     "js": "npm-run-all --parallel js-compile*",
     "js-compile": "cross-env PLUGINS=true babel src/js/src/  --out-dir src/js/ --source-maps --presets babel-preset-env",
-    "js-compile2": "cross-env PLUGINS=true babel src/js/src/  --out-dir src/js/src/ --source-maps --presets minify",
     "js-lint": "eslint src/js/src",
     "localhost": "browser-sync start --server \"./src\" --serveStatic \"./\" --files \"!./src/js/src/**/*, ./src/**/*, !./src/scss\"",
     "localhost-dist": "browser-sync start --server \"./dist\"",
-    "pug": "node build/pug.js",
     "release-version": "node build/change-version.js",
     "serve": "npm-run-all --parallel localhost watch-css watch-js",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
-    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\"",
-    "watch-pug": "nodemon -e pug -x \"npm run pug\""
+    "watch-js": "nodemon --watch src/js/src/ -x \"npm run js\""
   },
   "dependencies": {
     "@coreui/coreui": "2.0.4",
@@ -91,7 +88,6 @@
     "babel-eslint": "8.2.6",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-minify": "^0.5.0",
     "browser-sync": "2.24.4",
     "chalk": "^2.4.1",
     "chart.js": "1.0.*",
