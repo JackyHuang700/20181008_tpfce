@@ -4,19 +4,24 @@
 }
 
 table.dataTable thead th {
-  background-color: #b4d4d7;
+  background-color: #eb752a;
+  color: #fff;
+}
+
+table.dataTable.display tbody tr {
+  transition: background-color 0.3s ease-in-out;
 }
 
 table.dataTable.display tbody tr:nth-child(even) {
-  background-color: #f7f4f0;
+  background-color: #fef5f0;
 }
 
 table.dataTable.display tbody tr:nth-child(odd) {
-  background-color: #eaeeeb;
+  background-color: #fbe5d7;
 }
 
 table.dataTable.display tbody tr:hover {
-  background-color: rgba(255, 255, 255, 0.462);
+  background-color: #f8d0b6;
 }
 
 table.dataTable.display tbody tr.odd > .sorting_1,
@@ -25,7 +30,8 @@ table.dataTable.display tbody tr.even > .sorting_1 {
 }
 
 table.dataTable.display tbody tr:hover > .sorting_1 {
-  background-color: rgba(255, 255, 255, 0.462);
+  transition: background-color 0.3s ease-in-out;
+  background-color: #f8d0b6;
 }
 
 table.dataTable.no-footer {
@@ -59,9 +65,9 @@ table.dataTable thead th {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   background: none;
-  color: #23527c !important;
-  background-color: #b4d4d7;
-  border-color: #b4d4d7;
+  color: #fff !important;
+  background-color: #eb752a;
+  border-color: #eb752a;
   opacity: 0.5;
 }
 
@@ -69,12 +75,15 @@ table.dataTable thead th {
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
   color: #23527c !important;
   background: none;
-  background-color: #b4d4d7;
-  border-color: #b4d4d7;
+  background-color: #eb752a;
+  border-color: #eb752a;
   border-width: 0px;
   z-index: 2;
+  color: #fff !important;
 }
 
+.dataTables_wrapper .dataTables_filter label,
+.dataTables_wrapper .dataTables_length label,
 .dataTables_wrapper .dataTables_info {
   color: #666;
   opacity: 0.7;
@@ -85,7 +94,7 @@ table.dataTable thead th {
 }
 
 .dataTables_wrapper .dataTables_filter label::before {
-  content: "\f002";
+  content: '\f002';
   font-family: FontAwesome;
   width: 30px;
   height: 30px;
@@ -104,11 +113,11 @@ table.dataTable thead th {
   border-radius: 25px;
   outline: none;
   transition: border 0.3s ease-in-out;
-  border: 2px solid #b4d4d7;
+  border: 2px solid #eb752a;
 }
 
 .dataTables_wrapper .dataTables_filter input[type='search']:hover {
-  border-color: #61a4ab;
+  border-color: #c55813;
 }
 
 .dataTables_wrapper .dataTables_length select {
@@ -116,12 +125,12 @@ table.dataTable thead th {
   padding-right: 30px;
   color: #23527c;
   outline: none;
-  border: 2px solid #b4d4d7;
+  border: 2px solid #eb752a;
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #b4d4d7;
+  background: #eb752a;
   background-color: transparent;
   border-radius: 10px;
   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
@@ -131,8 +140,7 @@ table.dataTable thead th {
   background-position-y: 50%;
 }
 
-.dataTables_wrapper .dataTables_filter label,
-.dataTables_wrapper .dataTables_length label {
-  color: #23527c;
+a {
+  transition-duration: 0.3s;
 }
 /*# sourceMappingURL=dataTables.css.map */

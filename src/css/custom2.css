@@ -130,6 +130,10 @@ footer {
   color: black;
 }
 
+.leftNav {
+  margin-top: 0px;
+}
+
 @media only screen and (max-width: 1190px) {
   .logo {
     top: 22px;
@@ -163,6 +167,15 @@ footer {
   .logo {
     top: 0px;
   }
+  .top_menu .submenu li {
+    background-color: #eee;
+  }
+  .top_menu > ul > li.closeBtn {
+    background-color: #fff;
+  }
+  .top_menu > ul > li > a {
+    background-color: #fff;
+  }
   .top_menu > ul > li > a::before {
     transition: all 250ms;
   }
@@ -172,6 +185,10 @@ footer {
     background: none;
     content: '\f105';
     font-family: FontAwesome;
+  }
+  .mti {
+    background: url(../img/touchMe.png) 100% 63% no-repeat;
+    background-size: 40px;
   }
 }
 
@@ -195,6 +212,18 @@ footer {
   }
   .top_menu > ul > li.closeBtn a::before {
     content: none;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .logo {
+    top: 6px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .logo {
+    top: 12px;
   }
 }
 /*# sourceMappingURL=custom2.css.map */

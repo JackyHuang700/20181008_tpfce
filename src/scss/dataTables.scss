@@ -1,7 +1,14 @@
-$tableHoverColor: rgba(255, 255, 255, 0.462);
-$tableTemplateColor: #b4d4d7;
-$tableTemplateEvenColor: #f7f4f0;
-$tableTemplateOddColor: #eaeeeb;
+// $tableHoverColor: rgba(255, 255, 255, 0.462);
+// $tableHoverColor: #db5330;
+// $tableTemplateEvenColor: #f7f4f0;
+// $tableTemplateOddColor: #eaeeeb;
+// $tableTemplateOddFontColor: #23527c;
+
+$tableTemplateColor: #eb752a;
+$tableTemplateFontColor: #fff;
+$tableHoverColor: lighten($tableTemplateColor, 30%);
+$tableTemplateEvenColor: lighten($tableTemplateColor, 42.5%);
+$tableTemplateOddColor: lighten($tableTemplateColor, 37%);
 $tableTemplateOddFontColor: #23527c;
 
 .dataTables_scroll {
@@ -11,9 +18,12 @@ $tableTemplateOddFontColor: #23527c;
 
 table.dataTable thead th {
   background-color: $tableTemplateColor;
+  color: $tableTemplateFontColor;
 }
 
 table.dataTable.display tbody tr {
+  transition: background-color 0.3s ease-in-out;
+
   &:nth-child(even) {
     background-color: $tableTemplateEvenColor;
   }
@@ -31,6 +41,7 @@ table.dataTable.display tbody tr.even > .sorting_1 {
 }
 
 table.dataTable.display tbody tr:hover > .sorting_1 {
+  transition: background-color 0.3s ease-in-out;
   background-color: $tableHoverColor;
 }
 
@@ -48,7 +59,6 @@ table.dataTable thead th {
 // paginate
 .dataTables_wrapper .dataTables_paginate {
   border-radius: 4px;
-  // border: 1px solid red;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button,
@@ -68,7 +78,7 @@ table.dataTable thead th {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   background: none;
-  color: $tableTemplateOddFontColor !important;
+  color: $tableTemplateFontColor !important;
   // background-color: #eee;
   // border-color: #ddd;
   background-color: $tableTemplateColor;
@@ -86,8 +96,11 @@ table.dataTable thead th {
   // border-color: #337ab7;
   border-width: 0px;
   z-index: 2;
+  color: $tableTemplateFontColor !important;
 }
 
+.dataTables_wrapper .dataTables_filter label,
+.dataTables_wrapper .dataTables_length label,
 .dataTables_wrapper .dataTables_info {
   color: #666;
   opacity: 0.7;
@@ -97,9 +110,8 @@ table.dataTable thead th {
 .dataTables_wrapper .dataTables_filter label {
   position: relative;
 
-
   &::before {
-    content: "\f002";
+    content: '\f002';
     font-family: FontAwesome;
     width: 30px;
     height: 30px;
@@ -112,22 +124,17 @@ table.dataTable thead th {
 
 .dataTables_wrapper .dataTables_filter input[type='search'] {
   display: inline-block;
-  // width: 100%;
   padding: 0 12px;
   padding-right: 35px;
   box-sizing: border-box;
-  // margin-bottom: 20px;
   border: 2px solid transparent;
   border-radius: 25px;
   outline: none;
-  // font-style: 15px;
   transition: border 0.3s ease-in-out;
   border: 2px solid $tableTemplateColor;
-  // &:valid {
-  // }
 
   &:hover {
-    border-color: darken($tableTemplateColor, 25%);
+    border-color: darken($tableTemplateColor, 12%);
   }
 }
 
@@ -143,18 +150,13 @@ table.dataTable thead th {
   background: $tableTemplateColor;
   background-color: transparent;
   border-radius: 10px;
-  // background-color: $tableTemplateColor;
   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position-x: 100%;
   -webkit-background-position-y: 15px;
   background-position-y: 50%;
-  // background-position-y: 5px;
 }
 
-.dataTables_wrapper .dataTables_filter label,
-.dataTables_wrapper .dataTables_length label {
-  color: $tableTemplateOddFontColor;
+a {
+  transition-duration: 0.3s;
 }
-
-// .dataTables_wrapper .dataTables_length select opaction
