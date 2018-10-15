@@ -94,10 +94,27 @@ table.dataTable thead th {
 }
 
 // search
+.dataTables_wrapper .dataTables_filter label {
+  position: relative;
+
+
+  &::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 16px;
+  }
+}
+
 .dataTables_wrapper .dataTables_filter input[type='search'] {
   display: inline-block;
   // width: 100%;
   padding: 0 12px;
+  padding-right: 35px;
   box-sizing: border-box;
   // margin-bottom: 20px;
   border: 2px solid transparent;
@@ -106,7 +123,6 @@ table.dataTable thead th {
   // font-style: 15px;
   transition: border 0.3s ease-in-out;
   border: 2px solid $tableTemplateColor;
-
   // &:valid {
   // }
 
@@ -137,7 +153,7 @@ table.dataTable thead th {
 }
 
 .dataTables_wrapper .dataTables_filter label,
-.dataTables_wrapper .dataTables_length label{
+.dataTables_wrapper .dataTables_length label {
   color: $tableTemplateOddFontColor;
 }
 
