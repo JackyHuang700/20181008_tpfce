@@ -10,6 +10,23 @@ $templateColor4: #b84628;
   background-color: $templateColor3;
 }
 
+.mainTitle {
+  h2 {
+    width: 80.5%;
+  }
+
+  span {
+    color: #cccccc;
+  }
+}
+
+.lastEditDate {
+  display: block;
+  width: 100%;
+  text-align: right;
+  color: #cccccc;
+}
+
 .path a:hover,
 .mti h3,
 .thm li a:hover,
@@ -143,8 +160,43 @@ footer {
   }
 }
 
+.top_menu > ul > li:nth-last-child(2) > a::after {
+  content: none;
+}
+
 .leftNav {
   margin-top: 0px;
+}
+
+.attactArea {
+  display: block;
+  position: relative;
+  h3 {
+    font-size: 16px;
+    &:before {
+      position: relative;
+      top: 0px;
+      left: -5px;
+      display: inline-block;
+      width: 2.5px;
+      height: 20px;
+      content: '';
+      background-color: $templateColor3;
+      vertical-align: top;
+    }
+  }
+
+  a {
+    display: block;
+    float: left;
+    clear: left;
+    text-decoration: none;
+    padding: 3px 0;
+    &:hover {
+      color: #bdbdbd;
+      transition: color 0.3s ease-in-out;
+    }
+  }
 }
 
 @media only screen and (max-width: 1190px) {
@@ -186,11 +238,11 @@ footer {
     top: 0px;
   }
 
-  .top_menu .submenu li{
+  .top_menu .submenu li {
     background-color: #eee;
   }
 
-  .top_menu > ul > li.closeBtn{
+  .top_menu > ul > li.closeBtn {
     background-color: #fff;
   }
 
@@ -210,7 +262,7 @@ footer {
     font-family: FontAwesome;
   }
 
-  .mti{
+  .mti {
     background: url(../img/touchMe.png) 100% 63% no-repeat;
     background-size: 40px;
   }

@@ -2157,7 +2157,8 @@ footer {
   font-size: 12px;
 }
 .top_menu > ul > li:nth-child(7) > a:after {
-  display: none;
+  // display: none;
+  display: inline-block;
 }
 .top_menu > ul > li > a:after:last-child {
   display: none;
