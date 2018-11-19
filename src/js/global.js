@@ -6,6 +6,7 @@ var windowWidth = $window.width();
 var $body = window.opera ? document.compatMode == 'CSS1Compat' ? $('html') : $('body') : $('html,body');
 var pos = $window.scrollTop();
 var wx;
+var hx;
 var top_h;
 var slider1;
 var h = $(window).height();

@@ -26,6 +26,20 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"> -->
+  <style>
+    .right-main {
+      position: relative;
+
+    }
+
+    .path {
+      top: -15px;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -59,7 +73,7 @@
                   <li><a href="#7" class="">會所資訊</a></li>
                 </ul>
               </li>
-              <li class="subheader">
+              <li class="subheader top_menuNoSub">
                 <a href="#" class="">
                   <span class="tw">最新消息</span>
                 </a>
@@ -108,7 +122,7 @@
               </li>
               <li class="subheader">
                 <a href="#">
-                  <span class="tw">有站連結</span>
+                  <span class="tw">友站連結</span>
                 </a>
               </li>
               <li class="closeBtn"><a href="javascript:;">&times;</a></li>
@@ -120,6 +134,31 @@
     <main class="main">
       <section class="mainBox">
         <div class="mainContainer">
+          <div class="videoArea">
+            <h3>宣傳影片</h3>
+            <iframe src="https://www.youtube.com/embed/5dABHNrb3Vw" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="slideArea">
+            <h3>宣傳照片</h3>
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+              <a class="item"><img src="https://fakeimg.pl/1080x600/?text=Hello"></a>
+            </div>
+          </div>
           <div class="leftNav">
             <div class="mti">
               <h2>關於基金會</h2>
@@ -248,11 +287,23 @@
   </script>
   <!-- Bootstrap 3.3.7 -->
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- AdminLTE App -->
   <script src="js/global.js"></script>
   <script>
 
-   
+    $(function () {
+      $('#owl-demo').owlCarousel({
+        items: 1,
+        autoPlay: 3000,
+        loop: true,
+        // nav: true,
+        dots: true,
+        navigation: true,
+        navigationText: ["上一个", "下一个"]
+      })
+    });
   </script>
 </body>
 

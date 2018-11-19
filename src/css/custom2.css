@@ -6,7 +6,7 @@
 }
 
 .mainTitle h2 {
-  width: 80.5%;
+  width: 79.5%;
 }
 
 .mainTitle span {
@@ -72,6 +72,11 @@
   top: 15px;
 }
 
+.subheader .tw {
+  font-size: 10px;
+  padding-top: 2.6px;
+}
+
 .subheader .tw::after {
   left: 0;
   -webkit-transform: none;
@@ -134,6 +139,10 @@ footer {
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out, right 0.4s ease-in-out;
 }
 
+.open .headMenu {
+  height: 89px;
+}
+
 .online a {
   text-decoration: none;
   margin-bottom: 5px;
@@ -153,16 +162,30 @@ footer {
   margin-top: 0px;
 }
 
+main {
+  min-height: 825px;
+}
+
 .attactArea {
   display: block;
   position: relative;
+  height: auto;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .attactArea {
+    padding-left: 2%;
+  }
 }
 
 .attactArea h3 {
   font-size: 16px;
+  font-weight: 700;
+  margin-left: 8px;
 }
 
-.attactArea h3:before {
+.attactArea h3::before {
   position: relative;
   top: 0px;
   left: -5px;
@@ -185,6 +208,116 @@ footer {
 .attactArea a:hover {
   color: #bdbdbd;
   transition: color 0.3s ease-in-out;
+}
+
+.videoArea,
+.slideArea {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.videoArea h3,
+.slideArea h3 {
+  padding-left: 10px;
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.videoArea h3::before,
+.slideArea h3::before {
+  position: relative;
+  top: 0px;
+  left: -5px;
+  display: inline-block;
+  width: 5px;
+  height: 22px;
+  content: '';
+  background-color: #eb752a;
+  vertical-align: top;
+}
+
+.videoArea iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+}
+
+.consentFormArea {
+  background-color: #eb752a;
+  padding: 20px;
+}
+
+.consentFormArea .consentFormContent {
+  height: 400px;
+  overflow: auto;
+  border: 1px solid #999;
+  background-color: #fff;
+  padding: 32px;
+}
+
+.consentFormArea .consentFormContent p {
+  margin-bottom: 0;
+}
+
+.consentFormArea .consentFormChk {
+  margin: 10px 0;
+  padding-left: 35%;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .consentFormArea .consentFormChk {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.consentFormArea .consentFormChk input[type='checkbox'] {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .consentFormArea .consentFormChk input[type='checkbox'] {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .consentFormArea .consentFormChk label {
+    margin: 5px 0;
+  }
+}
+
+.consentFormArea button {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-red {
+  color: red;
+}
+
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.d-block {
+  display: block;
 }
 
 @media only screen and (max-width: 1190px) {
@@ -232,12 +365,27 @@ footer {
   .top_menu > ul > li > a::before {
     transition: all 250ms;
   }
+  .top_menu > ul > li > a::before {
+    top: -5px;
+  }
   .top_menu > ul > li > a.on::before,
   .top_menu > ul > li > a::before,
-  .top_menu > ul > li > a:hover::before {
+  .top_menu > ul > li:not(.closeBtn) > a:hover::before {
     background: none;
     content: '\f105';
     font-family: FontAwesome;
+  }
+  .top_menuNoSub.top_menuNoSub a {
+    padding-left: 74px;
+    padding-bottom: 12px;
+  }
+  .top_menuNoSub.top_menuNoSub a.on::before,
+  .top_menuNoSub.top_menuNoSub a::before,
+  .top_menuNoSub.top_menuNoSub a:not(.closeBtn):hover::before {
+    content: none;
+  }
+  .top_menu > ul > li > a {
+    padding-bottom: 9px;
   }
   .mti {
     background: url(../img/touchMe.png) 100% 63% no-repeat;
@@ -279,4 +427,5 @@ footer {
     top: 12px;
   }
 }
+
 /*# sourceMappingURL=custom2.css.map */

@@ -2,6 +2,10 @@ $templateColor: #fff;
 $templateColor2: #db5330;
 $templateColor3: #eb752a;
 $templateColor4: #b84628;
+$mediaQuery1000: 1000px;
+$mediaQuery767: 767px;
+$mediaQuery376: 376px;
+$mediaQuery300: 300px;
 
 .header,
 .headMenu,
@@ -12,7 +16,7 @@ $templateColor4: #b84628;
 
 .mainTitle {
   h2 {
-    width: 80.5%;
+    width: 79.5%;
   }
 
   span {
@@ -80,6 +84,8 @@ $templateColor4: #b84628;
 }
 
 .subheader .tw {
+  font-size: 10px;
+  padding-top: 2.6px;
   &::after {
     left: 0;
 
@@ -150,6 +156,12 @@ footer {
     -webkit-transform 0.4s ease-in-out, right 0.4s ease-in-out;
 }
 
+.open {
+  .headMenu {
+    height: 89px;
+  }
+}
+
 .online a {
   text-decoration: none;
   margin-bottom: 5px;
@@ -168,12 +180,25 @@ footer {
   margin-top: 0px;
 }
 
+main {
+  min-height: 825px;
+}
+
 .attactArea {
   display: block;
   position: relative;
+  height: auto;
+  overflow: auto;
+
+  @media screen and (max-width: $mediaQuery1000) {
+    padding-left: 2%;
+  }
+
   h3 {
     font-size: 16px;
-    &:before {
+    font-weight: 700;
+    margin-left: 8px;
+    &::before {
       position: relative;
       top: 0px;
       left: -5px;
@@ -197,6 +222,111 @@ footer {
       transition: color 0.3s ease-in-out;
     }
   }
+}
+
+.videoArea,
+.slideArea {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  clear: both;
+
+  h3 {
+    padding-left: 10px;
+
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    &::before {
+      position: relative;
+      top: 0px;
+      left: -5px;
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      content: '';
+      background-color: $templateColor3;
+      vertical-align: top;
+    }
+  }
+}
+
+.videoArea {
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+    // top: 100px;
+  }
+}
+
+//同意書
+.consentFormArea {
+  background-color: rgba($templateColor3, 1);
+  padding: 20px;
+  .consentFormContent {
+    height: 400px;
+    overflow: auto;
+    border: 1px solid #999;
+    background-color: #fff;
+    padding: 32px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .consentFormChk {
+    margin: 10px 0;
+    padding-left: 35%;
+    color: #fff;
+
+    @media screen and (max-width: $mediaQuery767) {
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    input[type='checkbox'] {
+      margin-right: 15px;
+
+      @media screen and (max-width: $mediaQuery767) {
+        display: block;
+      text-align: center;
+      width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    label{
+      @media screen and (max-width: $mediaQuery767) {
+        margin: 5px 0;
+      }
+    }
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.text-red{
+  color: red;
+}
+
+.py-5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pt-15{
+  padding-top: 15px;
+}
+
+.d-block{
+  display: block;
 }
 
 @media only screen and (max-width: 1190px) {
@@ -254,12 +384,31 @@ footer {
     }
   }
 
+  .top_menu > ul > li > a::before {
+    top: -5px;
+  }
+
   .top_menu > ul > li > a.on::before,
   .top_menu > ul > li > a::before,
-  .top_menu > ul > li > a:hover::before {
+  .top_menu > ul > li:not(.closeBtn) > a:hover::before {
     background: none;
     content: '\f105';
     font-family: FontAwesome;
+  }
+
+  .top_menuNoSub.top_menuNoSub a {
+    padding-left: 74px;
+    padding-bottom: 12px;
+  }
+
+  .top_menuNoSub.top_menuNoSub a.on::before,
+  .top_menuNoSub.top_menuNoSub a::before,
+  .top_menuNoSub.top_menuNoSub a:not(.closeBtn):hover::before {
+    content: none;
+  }
+
+  .top_menu > ul > li > a {
+    padding-bottom: 9px;
   }
 
   .mti {
@@ -267,7 +416,7 @@ footer {
     background-size: 40px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $mediaQuery767) {
   .top_menu > ul > li > a {
     padding: 11px 15px 8px 15px;
 
@@ -295,12 +444,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: $mediaQuery376) {
   .logo {
     top: 6px;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: $mediaQuery300) {
   .logo {
     top: 12px;
   }
