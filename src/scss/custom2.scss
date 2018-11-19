@@ -2,6 +2,7 @@ $templateColor: #fff;
 $templateColor2: #db5330;
 $templateColor3: #eb752a;
 $templateColor4: #b84628;
+$templateColor5: #ffc000;
 $mediaQuery1000: 1000px;
 $mediaQuery767: 767px;
 $mediaQuery376: 376px;
@@ -264,7 +265,7 @@ main {
   }
 }
 
-//同意書
+// 同意書
 .consentFormArea {
   background-color: rgba($templateColor3, 1);
   padding: 20px;
@@ -294,13 +295,13 @@ main {
 
       @media screen and (max-width: $mediaQuery767) {
         display: block;
-      text-align: center;
-      width: 100%;
+        text-align: center;
+        width: 100%;
         margin-right: 0;
       }
     }
 
-    label{
+    label {
       @media screen and (max-width: $mediaQuery767) {
         margin: 5px 0;
       }
@@ -312,21 +313,123 @@ main {
   }
 }
 
-.text-red{
+.text-red {
   color: red;
 }
 
-.py-5{
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.py-5 {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.pt-15{
-  padding-top: 15px;
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.d-block{
+.py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+
+.d-block {
   display: block;
+}
+
+// 登入頁面
+.body {
+  // background-color: rgb(190, 189, 189);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  // background-image: url(../img/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  .registerBtn,
+  .backBtn {
+    float: left;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: $templateColor2;
+    margin: 40px 0 0 40px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .registerBtn{
+    float:right;
+    margin: 40px 40px 0 0;
+  }
+
+  .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 370px;
+    margin: 50px auto;
+
+    form {
+      margin-bottom: 15px;
+      background: #f7f7f7;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+
+    .form-control{
+      &:focus{
+        border-color: $templateColor5;
+      }
+    }
+
+    .form-control,
+    .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+      background-color: $templateColor2;
+      border-color: $templateColor2;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: darken($templateColor2, 5%);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1190px) {

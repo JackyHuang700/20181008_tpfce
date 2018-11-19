@@ -307,17 +307,118 @@ main {
   color: red;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .py-5 {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pt-15 {
   padding-top: 15px;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
 .d-block {
   display: block;
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.body .registerBtn,
+.body .backBtn {
+  float: left;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #db5330;
+  margin: 40px 0 0 40px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.body .registerBtn:hover,
+.body .backBtn:hover {
+  transform: scale(1.2);
+}
+
+.body .registerBtn {
+  float: right;
+  margin: 40px 40px 0 0;
+}
+
+.body .login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 370px;
+  margin: 50px auto;
+}
+
+.body .login-form form {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.body .login-form h2 {
+  font-size: 20px;
+}
+
+.body .login-form .form-control:focus {
+  border-color: #ffc000;
+}
+
+.body .login-form .form-control,
+.body .login-form .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.body .login-form .btn {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #db5330;
+  border-color: #db5330;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.body .login-form .btn:hover {
+  background-color: #ce4724;
 }
 
 @media only screen and (max-width: 1190px) {
