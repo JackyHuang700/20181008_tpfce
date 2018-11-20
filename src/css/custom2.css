@@ -391,7 +391,7 @@ main {
 .body .login-form form {
   margin-bottom: 15px;
   background: #f7f7f7;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
   padding: 30px;
 }
 
@@ -480,6 +480,15 @@ main {
     padding-left: 74px;
     padding-bottom: 12px;
   }
+}
+
+@media only screen and (max-width: 1000px) and (max-width: 767px) {
+  .top_menuNoSub.top_menuNoSub a {
+    padding-left: 47px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .top_menuNoSub.top_menuNoSub a.on::before,
   .top_menuNoSub.top_menuNoSub a::before,
   .top_menuNoSub.top_menuNoSub a:not(.closeBtn):hover::before {
