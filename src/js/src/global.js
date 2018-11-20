@@ -193,13 +193,16 @@ $(document).ready(function() {
     var scrollTop = $(this).scrollTop()
     var top = $('.online')
     var hea = $('.header')
+    var memberInfo = $('.memberInfo')
     var mainHegiht = $('main')
     if (scrollTop >= 47) {
       hea.addClass('open')
       top.addClass('open')
+      memberInfo.addClass('open')
     } else {
       hea.removeClass('open')
       top.removeClass('open')
+      memberInfo.removeClass('open')
     }
   })
 

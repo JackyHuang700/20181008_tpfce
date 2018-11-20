@@ -82,6 +82,17 @@ $mediaQuery300: 300px;
 
 .logo {
   top: 15px;
+
+  @media only screen and (max-width: 1190px) {
+    top: 22px;
+  }
+
+  @media only screen and (max-width: $mediaQuery376) {
+    top: 6px;
+  }
+  @media only screen and (max-width: $mediaQuery300) {
+    top: 12px;
+  }
 }
 
 .subheader .tw {
@@ -317,11 +328,11 @@ main {
   color: red;
 }
 
-.mb-20{
+.mb-20 {
   margin-bottom: 20px;
 }
 
-.mb-30{
+.mb-30 {
   margin-bottom: 30px;
 }
 
@@ -383,8 +394,8 @@ main {
     }
   }
 
-  .registerBtn{
-    float:right;
+  .registerBtn {
+    float: right;
     margin: 40px 40px 0 0;
   }
 
@@ -400,7 +411,7 @@ main {
     form {
       margin-bottom: 15px;
       background: #f7f7f7;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, .6);
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
       // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
       padding: 30px;
     }
@@ -408,10 +419,9 @@ main {
       font-size: 20px;
     }
 
-    .form-control{
-      &:focus{
+    .form-control {
+      &:focus {
         border-color: $templateColor5;
-        
       }
     }
 
@@ -434,9 +444,31 @@ main {
   }
 }
 
-@media only screen and (max-width: 1190px) {
-  .logo {
-    top: 22px;
+// 會員資訊
+.memberInfo {
+  color: #fff;
+  background-color: $templateColor2;
+  padding: 5px 15px 2px 0;
+  text-align: right;
+  font-size: 16px;
+  box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.75);
+  transition: all .3s ease-in-out;
+
+  @media screen and (max-width: $mediaQuery767) {
+    text-align: center;
+    font-size: 13px;
+  }
+ 
+  &.open {
+    position: fixed;
+    top: 89px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  }
+
+  b{
+    letter-spacing: 1.2px;
   }
 }
 
@@ -505,7 +537,7 @@ main {
     padding-left: 74px;
     padding-bottom: 12px;
 
-    @media screen and (max-width: $mediaQuery767){
+    @media screen and (max-width: $mediaQuery767) {
       padding-left: 47px;
     }
   }
@@ -550,16 +582,5 @@ main {
     &::before {
       content: none;
     }
-  }
-}
-
-@media only screen and (max-width: $mediaQuery376) {
-  .logo {
-    top: 6px;
-  }
-}
-@media only screen and (max-width: $mediaQuery300) {
-  .logo {
-    top: 12px;
   }
 }
