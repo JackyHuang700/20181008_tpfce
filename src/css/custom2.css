@@ -365,6 +365,17 @@ main {
   display: block;
 }
 
+.d-none {
+  display: none;
+}
+
+.county,
+.district {
+  width: 15%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .body {
   position: relative;
   width: 100%;

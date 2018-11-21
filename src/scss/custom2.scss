@@ -367,6 +367,18 @@ main {
   display: block;
 }
 
+.d-none{
+  display: none;
+}
+
+// TWzipcode
+.county,
+.district{
+  width: 15%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 // 登入頁面
 .body {
   // background-color: rgb(190, 189, 189);
