@@ -319,8 +319,21 @@ main {
     }
   }
   button {
+    $consentFormAreaBtnColor: #4AACE8;
     display: block;
     margin: 0 auto;
+    // background-color: #2297E0;
+    background-color: $consentFormAreaBtnColor;
+    border-color: $consentFormAreaBtnColor;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, border-color; 
+    &:hover{
+      background-color: #4095C9;
+      border-color: #4095C9;
+    }
+    // background-color: darken($templateColor2, 5%);;
+    // background-color: darken($templateColor2;
   }
 }
 

@@ -319,6 +319,16 @@ main {
 .consentFormArea button {
   display: block;
   margin: 0 auto;
+  background-color: #4AACE8;
+  border-color: #4AACE8;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, border-color;
+}
+
+.consentFormArea button:hover {
+  background-color: #4095C9;
+  border-color: #4095C9;
 }
 
 .text-red {
