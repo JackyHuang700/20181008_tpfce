@@ -319,16 +319,16 @@ main {
 .consentFormArea button {
   display: block;
   margin: 0 auto;
-  background-color: #4AACE8;
-  border-color: #4AACE8;
-  transition-duration: .3s;
+  background-color: #4aace8;
+  border-color: #4aace8;
+  transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, border-color;
 }
 
 .consentFormArea button:hover {
-  background-color: #4095C9;
-  border-color: #4095C9;
+  background-color: #4095c9;
+  border-color: #4095c9;
 }
 
 .text-red {
@@ -463,17 +463,20 @@ main {
 .memberInfo {
   color: #fff;
   background-color: #db5330;
-  padding: 5px 15px 2px 0;
+  padding: 6px 15px 6px 0;
   text-align: right;
   font-size: 16px;
   box-shadow: 0px 3px 15px 1px rgba(0, 0, 0, 0.75);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
   .memberInfo {
     text-align: center;
     font-size: 13px;
+    vertical-align: middle;
+    padding: 9px 0 9px 0;
   }
 }
 
@@ -485,8 +488,44 @@ main {
   z-index: 9;
 }
 
+.memberInfo span,
+.memberInfo b {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .memberInfo span,
+  .memberInfo b {
+    font-size: 16px;
+  }
+}
+
 .memberInfo b {
   letter-spacing: 1.2px;
+  padding-right: 7px;
+}
+
+.memberInfo .login,
+.memberInfo .signOut {
+  background-color: #eb752a;
+  border-color: #eb752a;
+}
+
+@media screen and (max-width: 767px) {
+  .memberInfo .login,
+  .memberInfo .signOut {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+  }
+}
+
+.memberInfo .login:hover,
+.memberInfo .signOut:hover {
+  background-color: #fff;
+  color: #eb752a;
 }
 
 @media only screen and (max-width: 1000px) {
