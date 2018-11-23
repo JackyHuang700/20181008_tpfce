@@ -163,12 +163,12 @@ $(document).ready(function() {
 
   $('.leftNav').on('click', function(e) {
     var windowWidth = $window.width()
-    if (windowWidth <= 768) {
+    if (windowWidth <= 1000) {
       if ($(this).hasClass('leftopen')) {
         $(this)
           .children('.leftMenu')
           .stop()
-          .slideUp(200)
+          .slideUp(300)
         $(this).removeClass('leftopen')
         $(this).removeAttr('style')
       } else {
@@ -185,6 +185,19 @@ $(document).ready(function() {
     hx = windowHeight
     windowWidth = $window.width()
     windowHeight = $window.height()
+
+    ;(function(){
+      var leftMenuDom = document.getElementsByClassName('leftMenu')[0]
+      if (windowWidth > 1000) {
+        if (leftMenuDom.style.display === 'none') {
+          leftMenuDom.style.display = 'block'
+        }
+      }else{
+        if (leftMenuDom.style.display === 'block') {
+          leftMenuDom.style.display = 'none'
+        }
+      }
+    })()
   })
 
   $window.bind('scroll', function() {
