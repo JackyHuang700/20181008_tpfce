@@ -91,7 +91,7 @@
 }
 
 .subheader .tw {
-  font-size: 10px;
+  font-size: 15px;
   padding-top: 2.6px;
 }
 
@@ -626,6 +626,11 @@ main {
   .top_menu > ul > li.closeBtn a::before {
     content: none;
   }
+}
+
+.top_menu > ul > li > a:after {
+  margin: 0 5.5px;
+  top: 2px;
 }
 
 /*# sourceMappingURL=custom2.css.map */

@@ -96,7 +96,7 @@ $mediaQuery300: 300px;
 }
 
 .subheader .tw {
-  font-size: 10px;
+  font-size: 15px;
   padding-top: 2.6px;
   &::after {
     left: 0;
@@ -643,4 +643,10 @@ main {
       content: none;
     }
   }
+}
+
+
+.top_menu>ul>li>a:after{
+ margin: 0 5.5px; 
+ top: 2px;
 }
