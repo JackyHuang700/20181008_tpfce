@@ -90,6 +90,12 @@
   }
 }
 
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+  .logo {
+    display: none;
+  }
+}
+
 .subheader .tw {
   font-size: 15px;
   padding-top: 2.6px;
@@ -631,6 +637,14 @@ main {
 .top_menu > ul > li > a:after {
   margin: 0 5.5px;
   top: 2px;
+}
+
+.top_menu {
+  top: 26px;
+}
+
+.header.open .top_menu {
+  top: 11px;
 }
 
 /*# sourceMappingURL=custom2.css.map */

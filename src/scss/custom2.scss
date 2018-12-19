@@ -93,6 +93,10 @@ $mediaQuery300: 300px;
   @media only screen and (max-width: $mediaQuery300) {
     top: 12px;
   }
+
+  @media only screen and (max-width: 1200px) and (min-width: 1000px){
+    display: none;
+  }
 }
 
 .subheader .tw {
@@ -650,3 +654,12 @@ main {
  margin: 0 5.5px; 
  top: 2px;
 }
+
+.top_menu{
+  top: 26px;
+}
+
+.header.open .top_menu{
+  top: 11px;
+}
+
