@@ -648,6 +648,34 @@ main {
   }
 }
 
+.addlogo {
+  margin-top: 50px;
+  top: 0;
+  color: #535353;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .addlogo {
+    max-width: none;
+    width: 74%;
+    text-align: left;
+  }
+}
+
+.addlogo > * {
+  display: block;
+  margin-left: 50px;
+  width: 70%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .addlogo > * {
+    margin-left: 7px;
+    margin-right: auto;
+  }
+}
+
 .top_menu > ul > li > a:after {
   margin: 0 5.5px;
   top: 2px;
