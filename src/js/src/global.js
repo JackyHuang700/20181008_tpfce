@@ -188,13 +188,15 @@ $(document).ready(function() {
 
     ;(function(){
       var leftMenuDom = document.getElementsByClassName('leftMenu')[0]
-      if (leftMenuDom && windowWidth > 1000) {
-        if (leftMenuDom.style.display === 'none') {
-          leftMenuDom.style.display = 'block'
-        }
-      }else{
-        if (leftMenuDom.style.display === 'block') {
-          leftMenuDom.style.display = 'none'
+      if (leftMenuDom) {
+        if (windowWidth > 1000) {
+          if (leftMenuDom.style.display === 'none') {
+            leftMenuDom.style.display = 'block'
+          }
+        }else{
+          if (leftMenuDom.style.display === 'block') {
+            leftMenuDom.style.display = 'none'
+          }
         }
       }
     })()
