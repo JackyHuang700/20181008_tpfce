@@ -8,6 +8,13 @@ $mediaQuery767: 767px;
 $mediaQuery376: 376px;
 $mediaQuery300: 300px;
 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tfoot, thead, th, tr, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-family: 'Noto Sans TC';
+}
+
 #wrapper,
 .mti,
 .top_menu > ul > li.closeBtn a:before,
@@ -665,7 +672,7 @@ main {
   margin-top: 50px;
   top: 0;
   color: #535353;
-  font-size: 17px;
+  font-size: 19px;
   // color: rgb(5, 5, 199);
   // text-shadow: 0 0 15px #fff;
   
@@ -680,9 +687,13 @@ main {
     display: block;
     margin-left: 50px;
     width: 70%;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    color: #182CC8;
+    font-weight: 900;
 
     @media only screen and (max-width: 1000px){
-      margin-left: 7px;
+      width: 99%;
+      margin-left: 4px;
       margin-right: auto;
     }   
   }
