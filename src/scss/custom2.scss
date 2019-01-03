@@ -712,3 +712,16 @@ main {
   top: 11px;
 }
 
+//
+.tpfceBtn{
+  background-color: $templateColor3 !important;
+  border-color: $templateColor3 !important;
+  transition-timing-function: ease;
+  transition-property: background-color, border-color;
+  transition-duration: .3s;
+
+  &:hover, &:focus, &:active{
+    background-color: $templateColor2 !important;
+    border-color: $templateColor2 !important;
+  }
+}

@@ -698,4 +698,17 @@ main {
   top: 11px;
 }
 
+.tpfceBtn {
+  background-color: #eb752a !important;
+  border-color: #eb752a !important;
+  transition-timing-function: ease;
+  transition-property: background-color, border-color;
+  transition-duration: .3s;
+}
+
+.tpfceBtn:hover, .tpfceBtn:focus, .tpfceBtn:active {
+  background-color: #db5330 !important;
+  border-color: #db5330 !important;
+}
+
 /*# sourceMappingURL=custom2.css.map */
