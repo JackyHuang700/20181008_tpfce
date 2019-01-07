@@ -68,6 +68,18 @@ body {
   background-color: transparent;
 }
 
+@media screen and (max-width: 1000px) {
+  .top_menu .icon {
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top_menu .icon {
+    top: 4px;
+  }
+}
+
 .top_menu .submenu li:hover {
   background-color: #eb752a;
 }
@@ -709,6 +721,18 @@ main {
 .tpfceBtn:hover, .tpfceBtn:focus, .tpfceBtn:active {
   background-color: #db5330 !important;
   border-color: #db5330 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .header.open .top_menu .icon {
+    top: 3px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header.open .top_menu .icon {
+    top: 19px;
+  }
 }
 
 /*# sourceMappingURL=custom2.css.map */

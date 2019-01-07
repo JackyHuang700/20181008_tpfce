@@ -80,6 +80,15 @@ body{
 
 .top_menu .icon {
   background-color: transparent;
+
+  @media screen and (max-width: $mediaQuery1000){
+    top: -12px;
+  }
+
+  @media screen and (max-width: $mediaQuery767){
+    top: 4px;
+  }
+
 }
 
 .top_menu .submenu li:hover {
@@ -723,5 +732,15 @@ main {
   &:hover, &:focus, &:active{
     background-color: $templateColor2 !important;
     border-color: $templateColor2 !important;
+  }
+}
+
+//
+.header.open .top_menu .icon{
+  @media screen and (max-width: $mediaQuery1000){
+    top: 3px;
+  }
+  @media screen and (max-width: $mediaQuery767){
+    top: 19px;
   }
 }
