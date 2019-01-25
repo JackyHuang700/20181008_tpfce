@@ -60,6 +60,12 @@ body {
   background-color: #db5330;
 }
 
+@media screen and (min-width: 1001px) {
+  .top_menu .submenu {
+    box-shadow: 0 0 10px 0 rgba(40, 35, 45, 0.5);
+  }
+}
+
 .top_menu .submenu li:hover {
   background-color: #b84628;
 }
@@ -95,18 +101,6 @@ body {
 
 .logo {
   top: 15px;
-}
-
-@media only screen and (max-width: 1190px) {
-  .logo {
-    top: 22px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-  .logo {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -187,6 +181,12 @@ footer {
 
 .header.open .logo {
   top: 0;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  .header.open .logo {
+    top: 15px;
+  }
 }
 
 .online.open {
@@ -526,6 +526,12 @@ main {
   z-index: 9;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  .memberInfo.open {
+    top: 140px;
+  }
+}
+
 .memberInfo span,
 .memberInfo b {
   vertical-align: middle;
@@ -732,6 +738,56 @@ main {
 @media screen and (max-width: 767px) {
   .header.open .top_menu .icon {
     top: 19px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+  .header {
+    height: auto;
+  }
+  .header .headMenu {
+    transition: all .5s ease-out;
+    clear: both;
+    height: auto;
+  }
+  .header .headMenu .headBox {
+    height: auto;
+    width: 100%;
+  }
+  .header .headMenu .headBox .logo {
+    position: relative;
+    text-align: center;
+    float: none;
+    width: 223px;
+    height: auto;
+    clear: both;
+    display: block;
+    margin: 0 auto 2px;
+  }
+  .header .headMenu .headBox .top_menu {
+    position: relative;
+    width: 100%;
+    float: none;
+    height: 58px;
+    text-align: right;
+    clear: both;
+    display: block;
+    top: 0;
+    margin-left: auto;
+  }
+  .header .headMenu .headBox .top_menu ul {
+    padding: 0 15px;
+  }
+  .header .headMenu .headBox .top_menu ul::after {
+    display: table;
+    content: ' ';
+  }
+  .header .headMenu .headBox .top_menu ul > li {
+    height: auto;
+    float: left;
+  }
+  .header .headMenu .headBox .top_menu .submenu {
+    top: 61px;
   }
 }
 

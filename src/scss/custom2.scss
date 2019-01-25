@@ -3,6 +3,8 @@ $templateColor2: #db5330;
 $templateColor3: #eb752a;
 $templateColor4: #b84628;
 $templateColor5: #ffc000;
+$mediaQuery1200: 1200px;
+$mediaQuery1001: 1001px;
 $mediaQuery1000: 1000px;
 $mediaQuery767: 767px;
 $mediaQuery376: 376px;
@@ -72,6 +74,9 @@ body{
 
 .top_menu .submenu {
   background-color: $templateColor2;
+  @media screen and (min-width: $mediaQuery1001){
+    box-shadow: 0 0 10px 0 rgba(40,35,45,.5);
+  }
 }
 
 .top_menu .submenu li:hover {
@@ -107,12 +112,12 @@ body{
 .logo {
   top: 15px;
 
-  @media only screen and (max-width: 1190px) {
-    top: 22px;
-  }
-  @media only screen and (max-width: 1200px) and (min-width: 1000px){
-    display: none;
-  }
+  // @media only screen and (max-width: 1200px) {
+  //   top: 15px;
+  // }
+  // @media only screen and (max-width: 1200px) and (min-width: 1000px){
+  //   display: none;
+  // }
   @media only screen and (max-width: 1000px){
     max-width: 240px;
   }
@@ -191,6 +196,10 @@ footer {
 
 .header.open .logo {
   top: 0;
+
+  @media screen and (max-width: $mediaQuery1200) and (min-width: $mediaQuery1001){
+    top: 15px;
+  } 
 }
 
 .online.open {
@@ -525,6 +534,10 @@ main {
     left: 0;
     right: 0;
     z-index: 9;
+
+    @media screen and (max-width: $mediaQuery1200) and (min-width: $mediaQuery1001){
+      top: 140px;
+    }
   }
 
   span,
@@ -742,5 +755,75 @@ main {
   }
   @media screen and (max-width: $mediaQuery767){
     top: 19px;
+  }
+}
+
+.header{
+  @media screen and (max-width: $mediaQuery1200) and (min-width: $mediaQuery1001){
+    height: auto;
+
+    .headMenu{
+      transition: all .5s ease-out;
+      clear: both;
+      height: auto;
+
+
+      .headBox{
+        height: auto;
+        width: 100%;
+
+        .logo{
+          position: relative;
+          text-align: center;
+          float: none;
+          // width: 21%;
+          width: 223px;
+          // max-width: 223px;
+          // width: 100%;
+          height: auto;
+          clear: both;
+          display: block;
+          margin: 0 auto 2px;
+        }
+
+        .top_menu{
+          position: relative;
+          // width: auto;
+          // width: 71%;
+          width: 100%;
+          float: none;
+          height: 58px;
+          text-align: right;
+          clear: both;
+          // height: auto;
+          display: block;
+          // padding: 10px 0;
+          top: 0;
+          margin-left: auto;
+
+          ul{ 
+
+            padding: 0 15px;
+
+            &::after{
+              display: table;
+              content: ' ';
+            }
+            > li{
+              height: auto;
+              float: left;
+              // padding: 8px 0 8px 0;
+
+            }
+          }
+
+          .submenu{
+            top: 61px;
+          }
+        }
+      }
+    }
+
+
   }
 }
