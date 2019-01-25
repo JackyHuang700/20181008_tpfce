@@ -758,7 +758,8 @@ main {
     position: relative;
     text-align: center;
     float: none;
-    width: 223px;
+    width: 100%;
+    max-width: 250px;
     height: auto;
     clear: both;
     display: block;
