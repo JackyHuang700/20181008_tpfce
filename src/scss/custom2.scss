@@ -800,10 +800,11 @@ main {
           // padding: 10px 0;
           top: 0;
           margin-left: auto;
+          padding: 0 15px;
 
           ul{ 
 
-            padding: 0 15px;
+           
 
             &::after{
               display: table;
@@ -812,6 +813,7 @@ main {
             > li{
               height: auto;
               float: left;
+              text-align: left;
               // padding: 8px 0 8px 0;
 
             }

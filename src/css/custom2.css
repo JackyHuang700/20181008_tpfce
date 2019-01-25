@@ -774,8 +774,6 @@ main {
     display: block;
     top: 0;
     margin-left: auto;
-  }
-  .header .headMenu .headBox .top_menu ul {
     padding: 0 15px;
   }
   .header .headMenu .headBox .top_menu ul::after {
@@ -785,6 +783,7 @@ main {
   .header .headMenu .headBox .top_menu ul > li {
     height: auto;
     float: left;
+    text-align: left;
   }
   .header .headMenu .headBox .top_menu .submenu {
     top: 61px;
