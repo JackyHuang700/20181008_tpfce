@@ -206,11 +206,12 @@ $(document).ready(function() {
     pos = $window.scrollTop()
     windowWidth = $window.width()
     var scrollTop = $(this).scrollTop()
+    var screenWidth = window.screen.width
     var top = $('.online')
     var hea = $('.header')
     var memberInfo = $('.memberInfo')
     var mainHegiht = $('main')
-    if (scrollTop >= 47) {
+    if (scrollTop >= 47 && screenWidth > 1000 ) {
       hea.addClass('open')
       top.addClass('open')
       memberInfo.addClass('open')

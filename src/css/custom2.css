@@ -106,12 +106,13 @@ body {
 @media only screen and (max-width: 1000px) {
   .logo {
     max-width: 240px;
+    top: 8px;
   }
 }
 
 @media only screen and (max-width: 376px) {
   .logo {
-    top: 6px;
+    top: 9px;
   }
 }
 
@@ -596,9 +597,6 @@ main {
     background-color: #eb752a;
     padding: 5px 10px;
   }
-  .logo {
-    top: 0px;
-  }
   .top_menu .submenu li {
     background-color: #eee;
   }
@@ -788,6 +786,12 @@ main {
   }
   .header .headMenu .headBox .top_menu .submenu {
     top: 61px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .headMenu {
+    position: relative;
   }
 }
 
